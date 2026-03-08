@@ -1,10 +1,11 @@
 {
-    "buildCommand": "npx react-scripts build",
+    "version": 2,
+    "buildCommand": "CI=false node ./node_modules/react-scripts/bin/react-scripts.js build",
     "outputDirectory": "build",
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/"
+            "destination": "/index.html"
         }
     ]
 }
